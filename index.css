@@ -1,6 +1,27 @@
+.head{
+    text-align: center;
+    font-size: 48px;
+    color: darksalmon;
+}
+.boardCon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #board{
     display: grid;
     grid-template-columns: repeat(10, 0fr);
+    margin: 40px 0;
+}
+.pointCon{
+    font-size: 24px;
+    text-align: center;
+}
+
+#point{
+    color: darkred;
+    font-size: 28px;
 }
 
 input[type="checkbox"]{

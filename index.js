@@ -15,7 +15,7 @@ for(let i = 0 ;i< 100;i++){
 let rowCount = 10;
 let colCount = 10;
 
-let count = 0;
+let point = 0;
 let moveState = 2;
 // 1: right, 2: top, 3: left, 4: bottom
 
@@ -60,6 +60,8 @@ let snakeInterval = setInterval(()=>{
             clearInterval(snakeInterval)
         }
         document.getElementById(`${newRowNo}-${newColNo}`).disabled = false;
+        point++;
+        document.getElementById("point").textContent = point;
         return
     }
     document.getElementById(`${newRowNo}-${newColNo}`).checked = true;
