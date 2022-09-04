@@ -1,0 +1,9 @@
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 0fr);
+}
+
+input[type="checkbox"]{
+    width: 30px; /*Desired width*/
+    height: 30px; /*Desired height*/
+}
